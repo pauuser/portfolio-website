@@ -1,6 +1,7 @@
 import React from 'react'
 import avatar from '../assets/avatar.png'
 import { HiChevronDoubleDown } from "react-icons/hi";
+import { Link } from 'react-scroll'
 
 function Home() {
     return (
@@ -24,17 +25,19 @@ function Home() {
                 <p className='text-2xl text-amber-800'>Hello! I'm</p>
                 <h1 className='text-6xl font-bold text-amber-800'>Pavel Ivanov</h1>
                 <h2 className='text-2xl text-amber-800'>I'm a Software Engineer</h2>
-                <button className='group flex justify-center
-                                   border-2 px-6 py-2 my-4 md:mx-0 mx-auto
-                                   items-center
-                                   border-amber-800 text-amber-800 text-xl
-                                   hover:bg-amber-800 hover:text-white hover:border-amber-800
-                                   transition ease-in-out hover:scale-200 duration-300 hover:-translate-y-1'>
-                    Learn more
-                    <span>
-                        <HiChevronDoubleDown className='ml-3' />
-                    </span>
-                </button>
+                <Link to="about" smooth={true} duration={500}>
+                    <button className='group flex justify-center
+                                       border-2 px-6 py-2 my-4 md:mx-0 mx-auto
+                                       items-center
+                                       border-amber-800 text-amber-800 text-xl
+                                       hover:bg-amber-800 hover:text-white hover:border-amber-800
+                                       transition ease-in-out hover:scale-200 duration-300 hover:-translate-y-1'>
+                        Learn more
+                        <span>
+                            <HiChevronDoubleDown className='ml-3' />
+                        </span>
+                    </button>
+                </Link>
             </div>
         </div>
     );
