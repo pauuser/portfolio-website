@@ -10,7 +10,7 @@ function Technology(props: any) {
                         items-center justify-center'>
                 <img className='object-center my-auto' src={logo} alt={alt} />
             </div>
-            <div className='font-semibold text-xl justify-center items-center text-center text-gray-700'>{title}</div>
+            <div className='font-semibold text-lg justify-center items-center text-center text-gray-700'>{title}</div>
         </div>
     );
 };

@@ -8,12 +8,10 @@ function Home() {
         <div className='grid md:grid-cols-2 md:grid-rows-1
                              sm:grid-cols-1 sm:grid-rows-2
                              w-full h-screen justify-center items-center px-4'>
-
             <div className='md:order-[2]'>
-                <img className='object-center
+                <img className='md:object-center object-bottom
                                 max-h-[60%] max-w-[60%]
-                                justify-center items-center
-                                py-4 mx-auto md:mx-0 my-14'
+                                py-4 mx-auto md:mx-0'
                      src={avatar} alt='Pavel Ivanov'
                 />
             </div>
@@ -29,7 +27,7 @@ function Home() {
                     <button className='group flex justify-center border-gray-500 hover:border-white
                                        border-2 px-6 py-2 my-4 md:mx-0 mx-auto
                                        items-center rounded-3xl
-                                       text-blue-950 text-xl
+                                       text-blue-950 text-lg
                                        hover:text-white hover:bg-gradient-to-br from-blue-500 to-pink-700
                                        transition ease-in-out hover:scale-200 duration-300 hover:-translate-y-1'>
                         Learn more

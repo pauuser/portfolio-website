@@ -27,7 +27,7 @@ function About() {
     const btnClassNames = '\'group flex justify-center border-gray-500 hover:border-white\n' +
         '                                       border-2 px-6 py-2 my-4 md:mx-0 mx-auto\n' +
         '                                       items-center rounded-3xl\n' +
-        '                                       text-blue-950 text-xl\n' +
+        '                                       text-blue-950 text-lg\n' +
         '                                       hover:text-white hover:bg-gradient-to-br from-blue-500 to-pink-700\n' +
         '                                       transition ease-in-out hover:scale-200 duration-300 hover:-translate-y-1\'>';
 
@@ -38,10 +38,9 @@ function About() {
         <Element name='about'>
             <div className='h-[80px]'></div>
             <div className='flex flex-col w-full h-full min-h-screen mx-auto px-8 justify-center bg-white'>
-                <div className='grid md:grid-cols-2 md:grid-rows-1
-                                     sm:grid-cols-1 sm:grid-rows-2 gap-8'>
+                <div className='grid lg:grid-cols-2 lg:grid-rows-1 gap-8'>
                     <div>
-                        <img className='object-bottom
+                        <img className='object-bottom hidden lg:block
                                 max-h-[350px] max-w-[350px]
                                 md:max-h-[450px] md:max-w-[450px]
                                 justify-center items-center
@@ -51,7 +50,7 @@ function About() {
                     </div>
                     <div className=''>
                         <h1 className='text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-pink-200'>About me</h1>
-                        <p className='text-xl py-4 text-gray-700'>
+                        <p className='text-lg py-4 text-gray-700'>
                             I am a 20 y.o. backend developer living and studying in Moscow, Russia.
                             I believe that <b> software engineering can make the world a better place</b>.
                             I am looking for new projects which will benefit the world and people around me.

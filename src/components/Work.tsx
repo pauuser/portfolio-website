@@ -8,7 +8,7 @@ function Work(props: any) {
             <div className=''>
                 <img className='object-contain w-[80px] h-[80px]' src={logo} alt={alt} />
             </div>
-            <div className='font-semibold text-xl py-1 text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-purple-900'>{title}</div>
+            <div className='font-semibold text-lg py-1 text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-purple-900'>{title}</div>
             <div className='font-medium'>{place}</div>
             <div>{description}</div>
         </div>

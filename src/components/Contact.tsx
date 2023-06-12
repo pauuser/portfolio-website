@@ -12,7 +12,7 @@ function Contact(props: any) {
                             w-[60px] h-[60px]'>
                     <img src={logo} alt={alt} />
                 </div>
-                <div className='text-xl text-center lg:text-left col-span-5'>{title}</div>
+                <div className='text-lg text-center lg:text-left col-span-5'>{title}</div>
             </button>
         </a>
     );

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
     return (
-        <div className='w-full h-[80px] items-center justify-center text-xl font-mono text-gray-500 text-center'>
+        <div className='w-full h-[80px] items-center justify-center text-lg font-mono text-gray-500 text-center'>
             <div>
                 Pavel Ivanov, 2023
             </div>
