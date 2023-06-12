@@ -9,7 +9,7 @@ interface DropDownProps {
 function DropDown(bulletPoints: DropDownProps) {
     return (
         <div className='text-xl'>
-            <ul className='list-disc px-6'>
+            <ul className='list-disc px-6 text-gray-700'>
                 { bulletPoints.bulletList }
             </ul>
         </div>

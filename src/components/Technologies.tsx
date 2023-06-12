@@ -7,7 +7,7 @@ function Technologies() {
     return (
         <div className='grid md:grid-cols-3 grid-cols-2 gap-4'>
             {INFO.technologies.map((tech) => (
-                <div className='py-6'>
+                <div className='py-2'>
                     <Technology
                         logo={tech.logo}
                         alt={tech.alt}

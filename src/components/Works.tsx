@@ -7,7 +7,7 @@ function Works() {
     return (
         <div className='grid md:grid-cols-3 sm:grid-cols-1 gap-4'>
                 {INFO.works.map((work) => (
-                    <div className='py-6'>
+                    <div className='py-2'>
                         <Work
                             logo={work.logo}
                             alt={work.alt}

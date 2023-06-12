@@ -5,6 +5,7 @@ import Works from "./Works";
 function Experience() {
     return (
         <Element name='experience'>
+            <div className='h-[80px]'></div>
             <div className='flex flex-col w-full h-full min-h-screen bg-white mx-auto px-8 justify-center '>
                 <h1 className='font-bold text-5xl py-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-pink-200'>Work experience</h1>
 

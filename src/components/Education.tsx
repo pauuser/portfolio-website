@@ -7,6 +7,7 @@ function Education() {
     const liClassName = 'rounded-2xl hover:shadow'
     return (
         <Element name='education'>
+            <div className='h-[80px]'></div>
             <div className='flex flex-col w-full h-full min-h-screen bg-white mx-auto px-8 justify-center text-gray-700'>
                 <h1 className='font-bold text-5xl py-4 text-transparent bg-clip-text bg-gradient-to-br from-blue-700 to-red-600'>Education</h1>
                 <div className='text-xl py-2 grid lg:grid-cols-2'>
@@ -15,7 +16,7 @@ function Education() {
                         <p>Software Engineering Department, ICS7</p>
                         <p>Average score: 5.0 / 5.0</p>
                         <div>
-                            <h3 className='text-2xl py-2 font-medium text-transparent bg-clip-text bg-gradient-to-br from-blue-950 to-purple-700'>Key courses:</h3>
+                            <h3 className='text-2xl py-4 font-medium text-transparent bg-clip-text bg-gradient-to-br from-blue-950 to-purple-700'>Key courses:</h3>
                             <ul className='flex gap-2 text-center'>
                                 <li className={ liClassName + ' bg-red-100' }>Operating systems</li>
                                 <li className={ liClassName + ' bg-orange-100' }>Software architecture</li>
@@ -35,7 +36,7 @@ function Education() {
                             </ul>
                         </div>
                         <div>
-                            <h3 className='text-2xl py-2 font-medium text-transparent bg-clip-text bg-gradient-to-br from-blue-950 to-purple-700'>Research:</h3>
+                            <h3 className='text-2xl py-4 font-medium text-transparent bg-clip-text bg-gradient-to-br from-blue-950 to-purple-700'>Research:</h3>
                             <ul className='list-disc px-6'>
                                 <li>Development of a database for storing and processing parallel corpus of translated texts (2023)</li>
                                 <li>Classification of the known methods of text machine translation (2022)</li>

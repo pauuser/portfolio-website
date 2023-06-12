@@ -6,6 +6,7 @@ import Contact from "./Contact";
 function Contacts() {
     return (
         <Element name='contacts'>
+            <div className='h-[80px]'></div>
             <div className='w-full bg-white mx-auto px-8 py-6 justify-center '>
                 <div className='my-auto md:max-w-[60%] px-4'>
                     <h1 className='font-bold text-5xl py-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-pink-200'>Contacts</h1>
