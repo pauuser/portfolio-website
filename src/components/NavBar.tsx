@@ -3,8 +3,8 @@ import { Link } from 'react-scroll'
 
 function NavBar() {
     return (
-        <div className='fixed w-full h-[80px] flex items-center justify-center bg-white shadow-xl text-xl font-medium text-amber-800'>
-            <div>
+        <div className='fixed w-full h-[80px] flex items-center justify-center bg-white shadow-xl text-xl font-medium'>
+            <div className='text-transparent bg-clip-text bg-gradient-to-br from-blue-700 to-red-600'>
                 <ul className='flex'>
                     <li>
                         <Link to="about" smooth={true} duration={500}>

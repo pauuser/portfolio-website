@@ -8,6 +8,13 @@ import mongodb from '../assets/mongo.webp'
 import docker from '../assets/docker.webp'
 import gitlab from '../assets/gitlab.png'
 import redis from '../assets/redis.svg'
+import french from '../assets/french.png'
+import english from '../assets/english.svg'
+import russian from '../assets/russian.png'
+import github from '../assets/github.png'
+import instagram from '../assets/instagram.png'
+import telegram from '../assets/telegram.png'
+import mail from '../assets/mail.png'
 
 const INFO= {
     hardSkills: [
@@ -53,6 +60,49 @@ const INFO= {
             logo: redis,
             alt: 'Redis logo',
             title: 'Redis'
+        }
+    ],
+    languages: [
+        {
+            logo: russian,
+            alt: 'russian flag',
+            title: 'Russian - Native'
+        },
+        {
+            logo: english,
+            alt: 'the UK flag',
+            title: 'English - C1'
+        },
+        {
+            logo: french,
+            alt: 'France flag',
+            title: 'French - A2'
+        }
+    ],
+    contacts: [
+        {
+            logo: mail,
+            alt: 'mail icon',
+            title: 'pauuser.work@gmail.com',
+            link: 'mailto:pauuser.work@gmail.com'
+        },
+        {
+            logo: telegram,
+            alt: 'telegram logo',
+            title: '@pauuserrr',
+            link: 'https://t.me/pauuserrr'
+        },
+        {
+            logo: github,
+            alt: 'github logo',
+            title: '@pauuser',
+            link: 'https://github.com/pauuser'
+        },
+        {
+            logo: instagram,
+            alt: 'instagram logo',
+            title: '@pauuser',
+            link: 'https://instagram.com/pauuser?igshid=OGQ5ZDc2ODk2ZA=='
         }
     ],
     works: [

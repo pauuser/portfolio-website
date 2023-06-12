@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { Element } from 'react-scroll'
 
 import INFO from '../data/data'
-import avatar from '../assets/avata-2.gif'
+import avatar from '../assets/avatar-2.png'
 import DropDown from "./DropDown";
 import Technologies from "./Technologies";
 
@@ -24,13 +24,12 @@ function About() {
         setSoftSkills(prev => !prev);
     }
 
-    const btnClassNames = 'group flex justify-center\n' +
-        'border-2 px-6 py-2 my-4 md:mx-0 mx-auto\n' +
-        'items-center\n' +
-        'border-amber-800 text-amber-800 text-xl\n' +
-        'hover:bg-amber-800 hover:text-white hover:border-amber-800\n' +
-        'transition ease-in-out hover:scale-200 duration-300 hover:-translate-y-1\n' +
-        'hover:animate-none ';
+    const btnClassNames = '\'group flex justify-center border-gray-500 hover:border-white\n' +
+        '                                       border-2 px-6 py-2 my-4 md:mx-0 mx-auto\n' +
+        '                                       items-center rounded-3xl\n' +
+        '                                       text-blue-950 text-xl\n' +
+        '                                       hover:text-white hover:bg-gradient-to-br from-blue-500 to-pink-700\n' +
+        '                                       transition ease-in-out hover:scale-200 duration-300 hover:-translate-y-1\'>';
 
     const hardSkillsClassNames = btnClassNames + (hardSkills ? 'animate-none' : '');
     const softSkillsClassNames = btnClassNames + (hardSkills ? 'animate-none' : '');
@@ -42,15 +41,16 @@ function About() {
                                      sm:grid-cols-1 sm:grid-rows-2 gap-8'>
                     <div>
                         <img className='object-bottom
-                                max-h-[60%] max-w-[60%]
+                                max-h-[350px] max-w-[350px]
+                                md:max-h-[450px] md:max-w-[450px]
                                 justify-center items-center
                                 py-4 mx-auto my-14'
                              src={avatar} alt='Pavel Ivanov'
                         />
                     </div>
                     <div className=''>
-                        <h1 className='text-5xl font-bold'>About me</h1>
-                        <p className='text-xl py-4'>
+                        <h1 className='text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-pink-200'>About me</h1>
+                        <p className='text-xl py-4 text-gray-700'>
                             I am a 20 y.o. backend developer living and studying in Moscow, Russia.
                             I believe that <b> software engineering can make the world a better place</b>.
                             I am looking for new projects which will benefit the world and people around me.
@@ -58,11 +58,11 @@ function About() {
                         <div className='flex gap-4'>
                             <button className={hardSkillsClassNames}
                                 onClick={() => SetOppositeHardSkills()}>
-                                { hardSkills ? "Hide hard skills " : "Show hard skills" }
+                                { hardSkills ? "Hide hard skills " : "Hard skills" }
                             </button>
                             <button className={softSkillsClassNames}
                                     onClick={() => SetOppositeSoftSkills()}>
-                                { softSkills ? "Hide soft skills " : "Show soft skills" }
+                                { softSkills ? "Hide soft skills " : "Soft skills" }
                             </button>
                         </div>
                         {hardSkills &&
@@ -82,7 +82,7 @@ function About() {
                                 />
                             </div>}
                         <div className='text-3xl font-medium py-4'>
-                            Technologies
+                            <h2 className='text-transparent bg-clip-text bg-gradient-to-br from-blue-800 to-red-200 py-4'>Technologies </h2>
                             <Technologies/>
                         </div>
                     </div>
