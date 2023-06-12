@@ -2,8 +2,59 @@ import qoollo from '../assets/qoollo.png'
 import shkolkovo from '../assets/shkolkovo.png'
 import academy from '../assets/academy-a.png'
 import estiem from '../assets/estiem.png'
+import aspnet from '../assets/aspnet.webp'
+import postgresql from '../assets/postgres.png'
+import mongodb from '../assets/mongo.webp'
+import docker from '../assets/docker.webp'
+import gitlab from '../assets/gitlab.png'
+import redis from '../assets/redis.svg'
 
-const INFO: { works: any[] } = {
+const INFO= {
+    hardSkills: [
+        '.NET (C#, ASP.NET, EF Core)',
+        'DBMS (PostgreSQL, MongoDB, Redis)',
+        'Understanding of Linux',
+        'Clean architecture building',
+        'C, C++ and Python skills'
+    ],
+    softSkills: [
+        'Leadership',
+        'Great at working in teams',
+        'Diplomatic and open-minded',
+        'Ambitious, ready to aim high'
+    ],
+    technologies: [
+        {
+            logo: aspnet,
+            alt: 'ASP.NET Logo',
+            title: 'ASP.NET'
+        } ,
+        {
+            logo: postgresql,
+            alt: 'PostgreSQL Logo',
+            title: 'PostgreSQL'
+        },
+        {
+            logo: mongodb,
+            alt: 'MongoDB Logo',
+            title: 'MongoDB'
+        },
+        {
+            logo: docker,
+            alt: 'docker logo',
+            title: 'Docker'
+        },
+        {
+            logo: gitlab,
+            alt: 'GitLab Logo',
+            title: 'GitLab CI/CD'
+        },
+        {
+            logo: redis,
+            alt: 'Redis logo',
+            title: 'Redis'
+        }
+    ],
     works: [
         {
             logo: qoollo,
