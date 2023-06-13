@@ -4,10 +4,10 @@ import Languages from "./Languages";
 import bmstu from "../assets/bmstu.png";
 
 function Education() {
-    const liClassName = 'rounded-2xl hover:shadow'
+    const liClassName = 'rounded-2xl hover:shadow mx-2 my-2 py-2'
     return (
         <Element name='education'>
-            <div className='h-[80px]'></div>
+            <div className='hidden md:flex h-[80px]'></div>
             <div className='flex flex-col w-full h-full min-h-screen bg-white mx-auto px-8 justify-center text-gray-700'>
                 <h1 className='font-bold text-5xl py-4 text-transparent bg-clip-text bg-gradient-to-br from-blue-700 to-red-600'>Education</h1>
                 <div className='text-lg py-2 grid lg:grid-cols-2'>
@@ -17,20 +17,20 @@ function Education() {
                         <p>Average score: 5.0 / 5.0</p>
                         <div>
                             <h3 className='text-2xl py-4 font-medium text-transparent bg-clip-text bg-gradient-to-br from-blue-950 to-purple-700'>Key courses:</h3>
-                            <ul className='lg:flex gap-2 text-center'>
+                            <ul className='md:flex gap-2 text-center'>
                                 <li className={ liClassName + ' bg-red-100' }>Operating systems</li>
                                 <li className={ liClassName + ' bg-orange-100' }>Software architecture</li>
                                 <li className={ liClassName + ' bg-yellow-100' }>Databases</li>
                             </ul>
                         </div>
                         <div>
-                            <ul className='lg:flex py-2 gap-2 text-center'>
+                            <ul className='md:flex gap-2 text-center'>
                                 <li className={ liClassName + ' bg-green-100' }>Object-oriented programming</li>
                                 <li className={ liClassName + ' bg-blue-100' }>Functional and logical programming</li>
                             </ul>
                         </div>
                         <div>
-                            <ul className='lg:flex gap-2 text-center'>
+                            <ul className='md:flex gap-2 text-center'>
                                 <li className={ liClassName + ' bg-blue-200' }>Discrete mathematics</li>
                                 <li className={ liClassName + ' bg-purple-100' }>Statistics</li>
                             </ul>

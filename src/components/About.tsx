@@ -36,7 +36,7 @@ function About() {
 
     return (
         <Element name='about'>
-            <div className='h-[80px]'></div>
+            <div className='hidden md:flex h-[80px]'></div>
             <div className='flex flex-col w-full h-full min-h-screen mx-auto px-8 justify-center bg-white'>
                 <div className='grid lg:grid-cols-2 lg:grid-rows-1 gap-8'>
                     <div>

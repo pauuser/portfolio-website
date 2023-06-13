@@ -81,12 +81,6 @@ const INFO= {
     ],
     contacts: [
         {
-            logo: mail,
-            alt: 'mail icon',
-            title: 'pauuser.work@gmail.com',
-            link: 'mailto:pauuser.work@gmail.com'
-        },
-        {
             logo: telegram,
             alt: 'telegram logo',
             title: '@pauuserrr',
